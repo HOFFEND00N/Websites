@@ -223,3 +223,133 @@ a:visited{
     line-height: 16px;
     color: #9B9B9B;
 }
+
+@media(max-width: 1024px) {
+    .search-bar input {
+        max-width: 600px;
+    }
+    .container {
+        margin: 0 auto;
+    }
+    .header {
+        margin: 45px 50px 0;
+    }
+    .hero-content__container {
+        margin: 433px 50px 0;
+    }
+    .main-content__menu-container ul {
+        flex-wrap: wrap;
+    }
+    .main-content__menu-container li {
+        flex: 1 1 26%;
+        padding: 5px;
+    }
+    .menu li + li{
+        margin-left: 0px;
+    }
+    .main-content__container{
+        margin-left: 50px;
+        max-width: 1024px;
+        position: absolute;
+    }
+    .main-content__center{
+        display: block;
+    }
+    .bookmark__orange{
+        display: none;
+    }
+    .main-content{
+        padding-right: 45px;
+    }
+    .main-content__emailAndImage {
+        margin: 20px auto;
+    }
+}
+
+@media(max-width: 768px){
+    .bookmark {
+        margin-left: 10px;
+    }
+    .logo-Name {
+        margin-right: 10px;
+    }
+    .search-bar input {
+        width: 430px;
+    }
+    .main-content__container{
+        margin-right: 30px;
+        margin-left: 30px;
+        max-width: 768px;
+    }
+    .main-content{
+        margin: 0;
+        padding: 0 10px;
+    }
+    .main-content__text{
+        width: auto;
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 426px){
+    .search-bar input{
+        width: 340px;
+    }
+    .header{
+        margin: 27px 20px 28px;
+        flex-wrap: wrap;
+    }
+    .search__container{
+        order: 1;
+    }
+    .search__container{
+        margin-top: 28px;
+    }
+    .more{
+        display: none;
+    }
+    .main-content__container{
+        flex-wrap: wrap;
+    }
+    .main-content__roles-container{
+        display: none;
+    }
+    .menu{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .main-content__left{
+        margin: 0 auto;
+    }
+    .main-content__menu-container li {
+        flex: 1 1 1%;
+        padding: 5px;
+    }
+    .main-content__container{
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 375px){
+    .search-bar input{
+        width: 290px;
+    }
+    .info{
+        flex-wrap: wrap;
+    }
+    .play{
+        margin-top: 26px;
+    }
+    .text__country-year{
+        margin: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .search-bar input {
+        width: 234px;
+    }
+}
