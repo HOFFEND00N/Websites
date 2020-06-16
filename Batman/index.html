@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 </head>
 
 <body>
     <div class="container">
         <header class="header">
             <div class="logo-Name">
-                <a href=""> Кинопульс </a> 
+                <a href=""> Кинопульс </a>
             </div>
             <div class="search__container">
                 <div class="search-bar">
@@ -100,31 +102,26 @@
             <div class="main-content">
                 <div class="main-content__menu-container">
                     <ul class=menu>
-                        <li><a href="#"> Описание </a></li>
-                        <li><a href="#"> Рецензии </a></li>
-                        <li><a href="#"> Премьеры </a></li>
-                        <li><a href="#"> Актеры </a></li>
-                        <li><a href="#"> Награды </a></li>
-                        <li><a href="#"> Факты </a></li>
-                        <li><a href="#"> Сайты </a></li>
+                        <li><a href="#about" class="menu-item" style="color: #FF8F27;"> Описание </a></li>
+                        <li><a href="#reviews" class="menu-item"> Рецензии </a></li>
+                        <li><a href="#premiers" class="menu-item"> Премьеры </a></li>
+                        <li><a href="#actors" class="menu-item"> Актеры </a></li>
+                        <li><a href="#awards" class="menu-item"> Награды </a></li>
+                        <li><a href="#facts" class="menu-item"> Факты </a></li>
+                        <li><a href="#websites" class="menu-item"> Сайты </a></li>
                     </ul>
                     <img src="images/bookmark__orange.svg" alt="" class="bookmark__orange">
                 </div>
                 <div class="main-content__center">
-                    <div class="main-content__text">
+                    <div class="main-content__text" id="about">
                         <p>
                             Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах
-                            издательства
-                            DC
-                            Comics. Картина будет
-                            выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.
+                            издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой
+                            всех фильмов о Бэтмене.
                         </p> <br>
                         <p>
                             Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и
-                            сценаристом
-                            фильма
-                            выступит Мэтт Ривз,
-                            а главную роль исполнит Роберт Паттинсон
+                            сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон
                         </p> <br>
                         <h6>Разработка</h6> <br>
                         <p>
@@ -157,6 +154,90 @@
                             который, возможно, станет главным злодеем фильма.
                         </p>
                     </div>
+                    <div class="reviews" style="display: none;" id="reviews">
+                        <p>Скоро здесь появяться рецензии</p>
+                    </div>
+                    <div class="premiers" style="display: none;" id="premiers">
+                        <ul class="menu__premiers-list">
+                            <li class="menu__premiers-item"> <span> 24 июня 2021 </span> Аргентина </li>
+                            <li class="menu__premiers-item"> <span> 24 июня 2021 </span> Россия </li>
+                            <li class="menu__premiers-item"> <span> 24 июня 2021 </span> Словакия </li>
+                            <li class="menu__premiers-item"> <span> 25 июня 2021 </span> Американские Виргинские острова
+                            </li>
+                            <li class="menu__premiers-item"> <span> 25 июня 2021 </span> Бельгия </li>
+                            <li class="menu__premiers-item"> <span> 25 июня 2021 </span> Бразилия </li>
+                            <li class="menu__premiers-item"> <span> 25 июня 2021 </span> Великобритания </li>
+                            <li class="menu__premiers-item"> <span> 25 июня 2021 </span> Канада </li>
+                            <li class="menu__premiers-item"> <span> 25 июня 2021 </span> Литва </li>
+                            <li class="menu__premiers-item"> <span> 25 июня 2021 </span> Португалия </li>
+                            <li class="menu__premiers-item"> <span> 25 июня 2021 </span> США </li>
+                        </ul>
+                    </div>
+                    <div class="actors" style="display: none;" id="actors">
+                        <div class="actor">
+                            <img src="images/Robert-Pattison.png" alt="">
+                            <div class="actor-name">
+                                Роберт Паттисон
+                            </div>
+                            <div class="actor-role">
+                                Брюс Уэйн / Бэтмен
+                            </div>
+                        </div>
+                        <div class="actor">
+                            <img src="images/Zoi-Kravic.png" alt="">
+                            <div class="actor-name">
+                                Зои Кравиц
+                            </div>
+                            <div class="actor-role">
+                                Селина Кайл
+                            </div>
+                        </div>
+                        <div class="actor">
+                            <img src="images/Pol-Dano.png" alt="">
+                            <div class="actor-name">
+                                Пол Дано
+                            </div>
+                            <div class="actor-role">
+                                Эдвард Нэштон
+                            </div>
+                        </div>
+                        <div class="actor">
+                            <img src="images/Jeffry-Right.png" alt="">
+                            <div class="actor-name">
+                                Джеффри Райт
+                            </div>
+                            <div class="actor-role">
+                                Джеймс Гордон
+                            </div>
+                        </div>
+                        <div class="actor">
+                            <img src="images/Andy-Surkis.png" alt="">
+                            <div class="actor-name">
+                                Энди Сёркис
+                            </div>
+                            <div class="actor-role">
+                                Альфред Пенниуорт
+                            </div>
+                        </div>
+                        <div class="actor">
+                            <img src="images/John-Turturo.png" alt="">
+                            <div class="actor-name">
+                                Джон Туртурро
+                            </div>
+                            <div class="actor-role">
+                                Кармайн Фальконе
+                            </div>
+                        </div>
+                    </div>
+                    <div class="awards" style="display: none;" id="awards">
+                        У фильма пока нет наград.
+                    </div>
+                    <div class="facts" style="display: none;" id="facts">
+                        Факты отсутствуют.
+                    </div>
+                    <div class="websites" style="display: none;" id="websites">
+                        Сайты отсутствуют.
+                    </div>
                     <div class="main-content__emailAndImage">
                         <div class="main-content__email">
                             <div class="main-content__email-text">
@@ -165,7 +246,8 @@
                             <div class="main-content__email-subscribe-input-container">
                                 <input type="text" placeholder="Ваш Email" class="main-content__email-subscribe-input">
                                 <a href="">
-                                    <img src="images/button-check.png" alt="" class="main-content__email-subscribe-input-button-check">
+                                    <img src="images/button-check.png" alt=""
+                                        class="main-content__email-subscribe-input-button-check">
                                 </a>
                             </div>
                         </div>
@@ -175,6 +257,7 @@
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

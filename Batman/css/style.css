@@ -145,6 +145,15 @@ body{
 .menu{
     list-style: none;
 }
+.menu__premiers-list{
+    list-style: none;
+}
+.menu__premiers-list li+li{
+    margin-top: 15px;
+}
+.menu__premiers-item span{
+    font-weight: bolder;
+}
 .button-primary{
     margin-top: 20px;
     padding: 10px 44px;
@@ -220,6 +229,8 @@ body{
 .main-content__emailAndImage{
     margin-right: 50px;
     max-width: 220px;
+    position: absolute;
+    right: 148px;
 }
 .main-content__email-text{
     font-weight: 900;
@@ -242,6 +253,23 @@ body{
     font-size: 14px;
     line-height: 16px;
     color: #9B9B9B;
+}
+.actor-name{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 140%;
+}
+.actor-role{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%
+}
+.actors{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 530px;
 }
 
 @media(max-width: 1024px) {
@@ -283,6 +311,7 @@ body{
     }
     .main-content__emailAndImage {
         margin: 20px auto;
+        position: initial;
     }
 }
 
